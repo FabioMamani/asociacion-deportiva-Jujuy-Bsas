@@ -1,11 +1,15 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 
 }
 /*--FUENTES--
     font-family: 'Nunito', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    font-family: 'Titillium Web', sans-serif; */
+    font-family: 'Titillium Web', sans-serif; 
+    font-family: 'Bebas Neue', cursive;*/
 
 h1{
     font-family: 'Open Sans', sans-serif;
@@ -14,31 +18,32 @@ h1{
     color: #fafafa;
 }
 body{
-    background-color: #ffff;
+    background-color: #f2f2f2;
     z-index: 1;
 }
 
 /*Menu navegacion*/
 .navbar{
+    max-width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
-    height: 170px;
+    height: auto;
     background-color: #1a1a1a;
     
 }
-
 
 .navbar-brand{
     padding-left: 30px;
 }
 .navbar-brand img{
     border-radius: 100px;
-    width: 160px;
-    height: 160px;
+    width: 10rem;
+    height: 10rem;
 }
 
 
 .navbar-toggler{
+    margin-right: 50px;
     font-size: 30px !important;
 }
 
@@ -67,7 +72,7 @@ height: 100vh;
 
 .content-center p{
     color: #fafafa;
-    font-size: 19px;
+    font-size: 20px;
     line-height: 1.8;
     margin-bottom: 0;
 }
@@ -81,11 +86,14 @@ height: 100vh;
 }
 
 .container .titulado{
+    padding-top: 200px;
     text-transform: uppercase;
 }
 
 .container p{
+    font-size: 18px;
     padding-top: 30px;
+    margin-top: 20px;
 }
 
 .titulado::before{
@@ -105,133 +113,294 @@ height: 100vh;
 }
 
 .carousel{
-    margin-top: 80px;
+    width: 1100px;
+    height: 500px;
+    margin: 30px auto;
 }
 
 
-/*###########-ACTIVIDADES-###############*/
-
-.container{
-    position: relative;
-    max-width: 1000px;
+/*###########-CARTAS DE ACTIVIDADES-###############*/
+.container-cards{
+    width: 100%;
+    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-.container .cards{
-    position: relative;
-    display: flex;
     justify-content: center;
-    align-items: center;
+    text-align:center;
     flex-wrap: wrap;
-    margin: 100px 0;
-
+    
 }
-
-.container .cards:nth-child(odd){
-    flex-direction: row;
-}
-.container .cards:nth-child(even){
-    flex-direction: row-reverse;
-    text-align: right;
+.cards{
+    max-width: 400px;
+    height: 290px;
+    background-color: #ffff;
+    margin: 0 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.4s;
 }
 
 .cards .img-hero{
-    position: relative;
-    left: 25px;
-    width: 500px;
-    height: 400px;
-    z-index: 1;
-}
-
-.container .cards:nth-child(even) .img-hero{
-    left: -24px;
-}
-
-.container .cards .content-hero ::before{
-    content: '';
-    position: absolute;
-    top: -50px;
-    bottom: -50px;
-    left: 0;
-    right: 0;
-    background-color: #073b4c;
-    z-index: -1;
+    width: 100%;
+    height: 200px;
 }
 .img-hero img{
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
     object-fit: cover;
 }
+.cards .top-text{
+    padding: 10px;
+}
+.content-text{
+    padding: 0 20px 10px 20px;
+    margin-top: 5px;
+    background-color: #ffff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.1s;
+}
+.cards:hover{
+    height: 470px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.cards:hover .content-text{
+    visibility: visible;
+    opacity: 1;
+}
+.titulo-card{
+    font-family: 'Bebas Neue', cursive;
+    color: #023047;
+    font-size: 38px;
+    font-weight: 600;
+    
+}
 
-.cards .content-hero{
-    position: relative;
-    right: 25px;
-    width: 500px;
-    height: 400px;
-    padding: 20px 60px 20px 100px;
+.content-text p{
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 26px;
+    
+    
+}
+
+/*SECCION DE ACTIVIDADES*/
+.content-main{
+    padding: 60px;
+    text-align: center;
+}
+.titular-actividades::before{
+    content: '';
+    background: #002642;
+    width: 200px;
+    height: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(76px);
+}
+
+.content-main h2{
+    color:#000;
+    font-family: 'Nunito', sans-serif;
+    font-size: 38px;
+}
+
+.container-slide{
+    width: 100%;
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-color: #073b4c;
+    
+}
+.main-details{
+    width: 500px;
+    height: 300px;
+    text-align: center;
+
+}
+.main-details p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 1rem;
+
+}
+.slide-actividad{
+    width: 600px;
+    height: 300px;
+   
 }
 
-.container .cards:nth-child(even) .content-hero{
-    right: -25px;
-    padding: 20px 100px 20px 60px;
+.carousel-activity{
+    
+    max-height: 450px;
+ }
+.carousel-activity img{
+    width: 100%;
+    height: 100%;
 }
-.cards .content h2{
-    color: #fafafa;
-    font-size: 30px;
+
+/*.carousel-activity img{
+    width: 100%;
+    height: 100%;
+}*/
+/*INSTITUCIONAL*/
+  .institucional{
+      height: 500px;
+      background-color: #1a1a1a;
+      color: #ffffff;
+      padding: 80px 0;
+  }
+.container{
+    text-align: center;
+}
+.container .logo-brand{
+    width: 180px;
+    height: auto;
+    border-radius: 100%;
     
 }
 
-.cards .content p{
-    color: #fafafa;
-    margin-top: 10px;
+.container .list-inline{
+    margin-top: 30px;
+    text-align: center;
+    
+}
+.list-inline .fa-facebook{
+    color: #f1f1f1;
+    font-size: 18px;
+}
+.list-inline .fa-facebook:hover{
+    color: #00509d;
 }
 
+.container .list-inline-item{
+    padding: 10px 15px;
+ }
+
+ .list-inline-item a{
+     font-size: 18px;
+     font-family: 'Open Sans', sans-serif;
+     text-decoration: none;
+     color: #f1f1f1;
+ }
+
+ .list-inline-item a:hover{
+     color: #fff;
+     text-decoration: none;
+ }
+
+/*######################## RESPONSIVE #######################################3*/
 
 
-/*RESPONSIVE*/
-@media screen and (max-width: 1000px){
-    .container .cards{
-        flex-direction: column;
-        max-width: 350px;
-        margin: 25px 25px;
+@media screen and (min-width:360px) and (max-width: 575px){
+    .content-center h1{
+        font-size: 40px;
+        line-height: normal;
+        
+        
+    }
+    .container-titular .titulado{
+        font-size: 32px;
     }
 
+    .slide{
+        max-width: 95%;
+    }
+
+    .carousel-item img{
+       width: 100%;
+       height: 100%;
+    }
+    .cards{
+        margin-top: 20px;
+    }
+   .contenedor-contacto{
+       margin-top: 520px;
+   }
+   .container-titular .container{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+   }
+
+   .container iframe{
+       max-width: 100%;
+   }
+
+   /*Activity*/
+   .main-activity{
+       max-width: 100%;
+   }
+
+   .titular-actividades::before{
+    content: '';
+    background: #002642;
+    width: 200px;
+    height: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(160px);
+}
+
+.container-slide{
+    width: 100%;
+    height: 160vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    
+
+}
+.main-details{
+    margin-bottom: 120px;
+}
+.slide-actividad{
+    width: 95%;
+}
+}
+
+@media screen and (min-width:576px) and (max-width: 767px){
+    .slide{
+        max-width: 95%;
+    }
+
+    .carousel-item img{
+        width: 100%;
+    }
+
+   .container-cards{
+       max-width: 100%;
+       height: auto;
+       justify-content: center;
+       flex-wrap: wrap;
+       flex-direction: column;
+       
+       
+       
+   }
+   .cards{
+       max-width: 95%;
+       height: 380px;
+       margin: 20px 0;
+       
+    }
     .cards .img-hero{
-        width: 100%;
-        height: 250px;
-        left: 0;
-
+        height: 300px;
     }
-
-    .cards .content-hero{
-        width: 100%;
-        height: auto;
-        right: 0;
-        text-align: center;
-        padding: 30px;
-        
+    .cards .img-hero img{
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
-    .container .cards .content-hero ::before{
-        top: 0;
-        bottom: 0;
-    }
-    .container .cards:nth-child(even) .img-hero{
-        left: 0;
-    }
-    .container .cards:nth-child(even) .content-hero{
-        right: 0;
-        padding: 30px;
     
-        
+    .container iframe{
+        max-width: 100%;
     }
-}
+    
+   }
+    
+

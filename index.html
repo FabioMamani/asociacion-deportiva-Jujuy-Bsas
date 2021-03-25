@@ -6,9 +6,12 @@
     <title>Asociación Deportiva Jujeña en Buenos Aires</title>
     <!--ICONS-->
     <link href = "https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"  rel = "stylesheet" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <!--TIPOGRAFÍA-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&family=Open+Sans&family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <!--BOOTSTRAP CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -20,23 +23,23 @@
 <body>
 
     <nav class="navbar navbar-expand-md navbar-dark sticky-top">
-        <a class="navbar-brand" href="#"> <img src="img\logo1.jpg" alt="logo"></a>
-        <button class="navbar-toggler text-success" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar">
+        <a class="navbar-brand" href="index.html"> <img src="img\logo1.jpg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav text-center">
             <li class="nav-item">
-              <a class="nav-link" href="#">Inicio</a>
+              <a class="nav-link" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre Nosotros</a>
+              <a class="nav-link" href="#titular-presentacion">Sobre Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Actividades</a>
+              <a class="nav-link" href="#sobre-nosotros">Actividades</a>
             </li>   
             <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>   
           </ul>
         </div>  
@@ -48,7 +51,7 @@
         <h1 class="display-4">Bienvenidos a nuestra Asociación deportiva Jujeña en Buenos Aires</h1>
         <p>Somos una Asociacion sin fines de lucro que busca promover la competencia sana, actividades recreativas y ser un espacio social de entretenimiento para las familias.
         </p>
-        <a class="btn btn-primary" role="button" href="#">Ver mas</a>
+        <a class="btn btn-primary" role="button" href="#titular-presentacion">Ver mas</a>
       </div>
     </div>
   </section>
@@ -57,9 +60,10 @@
   
   <header class="container-titular">
     <div class="container text-center">
-      <h2 class="titulado">Quienes somos</h2>
+      <h2 class="titulado" id="titular-presentacion">Quienes somos</h2>
       <p>Nuestra actividad fundamental es la de promover y fomentar por medio del deporte a las personas a distenderse y a mejorar su calidad de vida.Funcionamos como estado de contencion a hacia los niños que vienen a nuestro predio. Nuestro objetivo es siempre inculcar los valores de vida, que son el respeto, humildad y ser solidario con el otro.Por ultimo quedan invitados a acercarse aquellos que quieran pertencer a nuestra Asociación y a personas que sean nativos de la puna jujeña, a entrar a los distintos campeonatos de futbol masculino y femenino que se hacen anualmente.</p>
     </div>
+  </header>
 
     <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -103,74 +107,102 @@
         <span class="carousel-control-next-icon"></span>
       </a>
     </div>
-  </header>
+  
 
   <!-- ACTIVITY-CARDS -->
 
 <header class="container-titular">
     <div class="container text-center">
-      <h2 class="titulado">Actividades</h2>
-      <p>Desde nuestro lugar promovemos las actividades deportivas tanto para niños, jovenes y veteranos.Anualmente se realizan torneos de futbol masculino , femenino , como asi también para las personas adultas modalidad veteranos.
-        Nuestra asociación cuenta con alrededor de 1000 personas (socios y no socios) que ingresan a diario a hacer alguna actividad , como asi también pasar el día y compartir un buen rato en familia.
+      <h2 class="titulado" id="sobre-nosotros">Actividades</h2>
+      <p>Desde nuestro lugar promovemos las actividades deportivas tanto para niños, jovenes y veteranos. Anualmente se realizan torneos de futbol masculino , femenino , como asi también para las personas adultas modalidad veteranos.
+        Nuestra asociación cuenta con alrededor de 1000 personas (socios y no socios) que ingresan a diario a hacer alguna actividad ,pasar el día y compartir un buen rato en familia.
       </p>
     </div>
+    </header>
 
-    <div class="container">
-      <div class="cards">
-        <div class="img-hero">
-          <img src="img/cards/card1.jpg" alt="">
-        </div>
-        <div class="content-hero">
-        <div class="content">
-          <h2>Torneo Femenino</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, voluptates!</p>
-          <a class="btn btn-outline-info" href="">Ver mas</a>
-        </div>
-      </div>
-      </div>
-
+    <section class="container-cards">
       <div class="cards">
         <div class="img-hero">
           <img src="img/cards/card2.png" alt="">
         </div>
-
-        <div class="content-hero">
-        <div class="content">
-          <h2>Torneo Masculino</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, error.</p>
-          <a class="btn btn-outline-info" href="">Ver mas</a>
+        <div class="top-text">
+        <h3 class="titulo-card">Futbol masculino</h3>
+      </div>
+        <div class="content-text">
+          <p>Diferentes equipos representando a los pueblos de la puna jujeña disputan partidos todos los domingos, se llevan a cabo  torneos anuales como relampagos.</p>
+          <a class="btn btn-outline-primary" href="activity/campeonatos.html">Ver mas</a>
         </div>
       </div>
+
+      <div class="cards"> 
+        <div class="img-hero">
+        <img src="img/cards/card1.jpg" alt="">
       </div>
+      <div class="top-text">
+      <h3 class="titulo-card">Futbol femenino</h3>
+    </div>
+      <div class="content-text">
+        <p>Torneo anual de futbol femenino , en donde participan mujeres de todas las edades con ganas de divertirse y enfrentarse dentro de un campeonato muy competitivo.</p>
+        <a class="btn btn-outline-primary" href="activity/campeonatos.html">Ver mas</a>
+      </div>
+    </div>
 
       <div class="cards">
-        <div class="img-hero">
-          <img src="img/cards/card4.jpg" alt="">
-        </div>
-
-        <div class="content-hero">
-        <div class="content">
-          <h2>Escuelita de Futbol</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, officiis?</p>
-          <a class="btn btn-outline-info" href="">Ver mas</a>
-        </div>
+      <div class="img-hero">
+        <img src="img/cards/card4.jpg" alt="">
       </div>
-      </div>
-
+      <div class="top-text">
+      <h3 class="titulo-card">Escuelita de futbol infantil</h3>
+    </div>
+      <div class="content-text">
+        <p>Los jóvenes son el futuro y la prioridad para cualquier asociación que quiera que su comunidad siga creciendo con el tiempo, por esta razón capacitamos a 
+          niños y niñas a disfrutar de este hermoso deporte que es el futbol.</p>
+        <a class="btn btn-outline-primary" href="activity/futbol-infantil.html">Ver mas</a>
+      </div></div>
       <div class="cards">
         <div class="img-hero">
           <img src="img/cards/card3.jpg" alt="">
-        </div>
-
-        <div class="content-hero">
-        <div class="content">
-          <h2>Festivales</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, error.</p>
-          <a class="btn btn-outline-info" href="">Ver mas</a>
-        </div>
       </div>
+      <div class="top-text">
+      <h3 class="titulo-card">Festivales</h3>
+    </div>
+      <div class="content-text">
+        <p>Fiestas, celebraciones, y fechas tradicionales se llevan a cabo todos los años en nuestra asociación. Desde artistas invitados reconocidos
+          a grupos del ámbito local.</p>
+        <a class="btn btn-outline-primary" href="activity/celebraciones.html">Ver mas</a>
       </div>
     </div>
+    </section>
+  
+
+      <!--CONTACT-->
+      <header class="container-titular contenedor-contacto">
+        <div class="container text-center">
+          <h2 class="titulado" id="contacto">Contacto</h2>
+          <p>Redes sociales: <strong>@AsociaciondeportivadelaPunaJujeñaenBsAs.</strong></p>
+          <p>Dirección: El hornero / El curro, ruta 21, La Matanza, Buenos Aires.</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1639.842581829697!2d-58.534549741933354!3d-34.713120090294005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccf464d5e028b%3A0x53e6ce57d328236b!2sEl%20Curro%2025%2C%20Cdad.%20Evita%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1596029532795!5m2!1ses!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          
+        </div>
+      </header>
+
+
+      <!--INSTITUCIONAL-->
+      <footer class="institucional">
+        <div class="container">
+          <img src="/img/logo1.jpg" class="logo-brand" alt="logo-asociacion-deportiva-jujeña">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="index.html">Inicio</a></li>
+            <li class="list-inline-item"><a href="#titular-presentacion">Sobre Nosotros</a></li>
+            <li class="list-inline-item"><a href="#sobre-nosotros">Actividades</a></li>
+            <li class="list-inline-item"><a href="#contacto">Contacto</a></li>
+          </ul>
+          <ul class="list-inline">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <small><i class="far fa-copyright"></i>2021, Asociación civil deportiva y recreativa comunidades de la Puna jujeña en Buenos Aires</small>
+          </ul>
+        </div>
+      </footer>
 
 
 
